@@ -16,4 +16,8 @@ public class TestModel {
     public TestDataStructure2[] getObjects() {
         return objects.toArray(new TestDataStructure2[objects.size()]);
     }
+
+    public void clearObjects() {
+        objects.clear();
+    }
 }

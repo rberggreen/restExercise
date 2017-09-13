@@ -14,13 +14,12 @@ public class Application {
     private static TestModel testModel;
 
     public static void main(String[] args) {
-        testModel = new TestModel();
         SpringApplication.run(Application.class, args);
     }
 
     @Bean
     public TestModel testModel() {
-        return testModel;
+        return new TestModel();
     }
 
 
